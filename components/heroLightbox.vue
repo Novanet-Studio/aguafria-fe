@@ -1,6 +1,6 @@
 <template>
    <!-- Start -->
-   <section id="questions" class="py-24 w-full table relative bg-[url('assets/images/bg/cta.png')] bg-center bg-cover">
+   <section class="py-24 w-full table relative bg-[url('assets/images/bg/cta.png')] bg-center bg-cover" id="questions">
       <div class="absolute inset-0 bg-black opacity-80"></div>
       <div class="container relative">
          <div class="grid grid-cols-1 pb-8 text-center">

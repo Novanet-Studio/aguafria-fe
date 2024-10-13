@@ -31,7 +31,7 @@
     <services />
     <heroBox />
     <!-- Start -->
-    <section class="w-full h-[32rem]">
+    <section class="w-full h-[32rem]" id="map">
 
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3925.1844683867957!2d-66.89434282414202!3d10.327117667318877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c2af1e29b2778bd%3A0xc8ee9465d2b2dd1a!2sAltos%20de%20Agua%20Fr%C3%ADa%20(Agua%20Fr%C3%ADa%20Coffee)!5e0!3m2!1sen!2sve!4v1728856603789!5m2!1sen!2sve"

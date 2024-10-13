@@ -3,8 +3,8 @@
         <div class="container flex flex-wrap items-center justify-end">
             <NuxtLink class="navbar-brand" to="/">
                 <span class="inline-block dark:hidden">
-                    <img src="assets/images/logo-light.png" class="l-dark" alt="">
-                    <img src="assets/images/logo-dark.png" class="l-light" alt="">
+                    <img src="assets/images/logo-light.png" class="l-dark w-[6em] md:w-auto" alt="">
+                    <img src="assets/images/logo-dark.png" class="l-light " alt="">
                 </span>
                 <img src="assets/images/logo-light.png" class="hidden dark:inline-block" alt="">
             </NuxtLink>
