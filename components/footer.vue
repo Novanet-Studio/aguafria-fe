@@ -19,15 +19,13 @@
 
                 <div class="md:col-span-4 md:mt-0 mt-8">
                     <ul class="list-none foot-icon ltr:md:text-right rtl:md:text-left text-center">
-                        <li class="inline"><a href="https://www.facebook.com/shreethemes" target="_blank"
+                        <li class="inline"><a href="https://www.facebook.com/profile.php?id=100095421798175"
+                                target="_blank"
                                 class="btn btn-icon btn-sm border rounded-md border-slate-700 dark:border-slate-800 hover:border-orange-600 bg-slate-800 dark:bg-gray-900 hover:bg-orange-600 dark:hover:bg-orange-600 text-gray-400 hover:text-white"><i
                                     class="uil uil-facebook-f align-middle" title="facebook"></i></a></li>
-                        <li class="inline"><a href="https://www.instagram.com/shreethemes/" target="_blank"
+                        <li class="inline"><a href="https://www.instagram.com/aguafriacoffee" target="_blank"
                                 class="btn btn-icon btn-sm border rounded-md border-slate-700 dark:border-slate-800 hover:border-orange-600 bg-slate-800 dark:bg-gray-900 hover:bg-orange-600 dark:hover:bg-orange-600 text-gray-400 hover:text-white"><i
                                     class="uil uil-instagram align-middle" title="instagram"></i></a></li>
-                        <li class="inline"><a href="https://twitter.com/shreethemes" target="_blank"
-                                class="btn btn-icon btn-sm border rounded-md border-slate-700 dark:border-slate-800 hover:border-orange-600 bg-slate-800 dark:bg-gray-900 hover:bg-orange-600 dark:hover:bg-orange-600 text-gray-400 hover:text-white"><i
-                                    class="uil uil-twitter align-middle" title="twitter"></i></a></li>
                     </ul><!--end icon-->
                 </div><!--end col-->
             </div><!--end row-->

@@ -16,7 +16,7 @@ export default defineNuxtConfig({
       titleTemplate: 'Agua Fría Coffee Landing Page',
       htmlAttrs: { class: 'light scroll-smooth', dir:'ltr' },
       bodyAttrs: {
-        class: 'font-rubik text-base text-slate-900 dark:text-white dark:bg-slate-900',
+        class: 'font-saira text-base text-slate-900 dark:text-white dark:bg-slate-900',
       },
       meta: [
         { charset: 'utf-8' },

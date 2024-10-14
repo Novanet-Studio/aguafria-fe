@@ -14,21 +14,20 @@
             <div class="relative mt-10">
                <ul class="list-none menu-social mb-0">
                   <li class="inline">
-                     <a href=""
+                     <a href="https://wa.me/5804143661545" target="_blank"
                         class="btn btn-lg btn-icon rounded-full bg-cobalt-primary hover:bg-cobalt-secondary border-cobalt-primary hover:borcobalt-secondary-700 text-xl text-white"><i
                            class="uil uil-whatsapp"></i></a>
                   </li>
                   <li class="inline">
-                     <a href=""
+                     <a href="mailto:aguafriacoffee@gmail.com"
                         class="btn btn-lg btn-icon rounded-full bg-cobalt-primary hover:bg-cobalt-secondary border-cobalt-primary hover:borcobalt-secondary-700 text-xl text-white"><i
                            class="uil uil-envelope"></i></a>
                   </li>
                   <li class="inline">
-                     <a href="">
-                        <a href=""
-                           class="btn btn-lg btn-icon rounded-full bg-cobalt-primary hover:bg-cobalt-secondary border-cobalt-primary hover:borcobalt-secondary-700 text-xl text-white"><i
-                              class="uil uil-instagram"></i></a>
-                     </a>
+                     <a href="https://www.instagram.com/aguafriacoffee" target="_blank"
+                        class="btn btn-lg btn-icon rounded-full bg-cobalt-primary hover:bg-cobalt-secondary border-cobalt-primary hover:borcobalt-secondary-700 text-xl text-white"><i
+                           class="uil uil-instagram"></i></a>
+
                   </li>
                </ul>
             </div>

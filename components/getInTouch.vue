@@ -12,26 +12,27 @@
             <div class="grid grid-cols-1 lg:grid-cols-12 md:grid-cols-2 mt-8 items-center gap-6">
                 <div class="lg:col-span-8">
                     <div class="p-6 rounded-md shadow bg-white dark:bg-slate-900">
-                        <form>
+                        <form name="contacto" method="post" action="/gracias" data-netlify="true" data-netlify-honeypot="bot-field">
+                            <input type="hidden" name="form-name" value="contacto" />
                             <div class="grid lg:grid-cols-12 lg:gap-6">
                                 <div class="lg:col-span-6 mb-5">
-                                    <input name="name" id="name" type="text" class="form-input"
+                                    <input type="text" name="nombre" v-model="name" class="form-input"
                                         placeholder="Nombre y apellido :">
                                 </div>
 
                                 <div class="lg:col-span-6 mb-5">
-                                    <input name="email" id="email" type="email" class="form-input"
+                                    <input type="email" name="email" v-model="email" class="form-input"
                                         placeholder="Email :">
                                 </div><!--end col-->
                             </div>
 
                             <div class="grid grid-cols-1">
                                 <div class="mb-5">
-                                    <input name="subject" id="subject" class="form-input" placeholder="Asunto :">
+                                    <input type="text" name="asunto" class="form-input" placeholder="Asunto :">
                                 </div>
 
                                 <div class="mb-5">
-                                    <textarea name="comments" id="comments" class="form-input textarea h-28"
+                                    <textarea name="mensaje" v-model="message" class="form-input textarea h-28"
                                         placeholder="Mensaje :"></textarea>
                                 </div>
                             </div>
@@ -51,7 +52,7 @@
 
                             <div class="flex-1 ms-6">
                                 <h5 class="text-lg dark:text-white mb-2 font-medium">Teléfono</h5>
-                                <a href="tel:+152534-468-854" class="text-slate-400">+58 414-3661545</a>
+                                <a href="tel:+584143661545" class="text-slate-400">+58 414-3661545</a>
                             </div>
                         </div>
 

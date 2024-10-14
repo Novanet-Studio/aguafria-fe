@@ -22,7 +22,7 @@ module.exports = {
             lg_992: '992px',
         },
         fontFamily: {
-            'rubik': ['"Rubik", sans-serif'],
+            'saira': ['"Saira", sans-serif'],
         },
         container: {
             center: true,
