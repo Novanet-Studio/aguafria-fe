@@ -1,12 +1,15 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  ssr: false,
   devtools: { enabled: true },
+
   css: [
     '~/assets/scss/tailwind.scss',
     '~/assets/css/materialdesignicons.min.css',
     '~/assets/libs/@iconscout/unicons/css/line.css',
     '~/assets/css/jarallax.min.css'
 ],
+
   app: {
     head: {
       title: 'Agua Fría Coffee',
@@ -38,11 +41,13 @@ export default defineNuxtConfig({
       ]
     },
   },
+
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
     },
   },
-  
+
+  compatibilityDate: '2024-10-13'
 })
