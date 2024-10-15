@@ -21,7 +21,7 @@
                                     class="btn btn-sm btn-icon rounded-full bg-gray-50 hover:bg-gray-200 dark:bg-slate-900 dark:hover:bg-gray-700 hover:border-gray-100 dark:border-gray-700 dark:hover:border-gray-700"><i
                                         class="uil uil-instagram"></i></span></span>
                         </a>
-                    </li>
+                    </li>              
                     <li class="inline">
                         <a href="https://www.facebook.com/profile.php?id=100095421798175" target="_blank">
                             <span class="login-btn-primary"><span
@@ -77,9 +77,8 @@ export default {
         return {
             toggle: false,
             scroll: true,
-            isBrowser: typeof window !== "undefined",
-            sections: () => { if (!isBrowser) document.querySelectorAll("section") },
-            navLi: () => { if (!isBrowser) document.querySelectorAll("nav .container .navigation ul li") },
+            sections: document.querySelectorAll("section"),
+            navLi: document.querySelectorAll("nav .container .navigation ul li"),
             current: "",
             sectionTop: null,
 
@@ -112,24 +111,19 @@ export default {
         },
 
         onscroll() {
-            if (!isBrowser) {
-                document.querySelectorAll("section").forEach((section) => {
-                    this.sectionTop = section.offsetTop;
-                    if (pageYOffset >= this.sectionTop - 60) {
-                        this.current = section.getAttribute("id");
-                    } else { }
-                })
-            }
-
-            if (!isBrowser) {
-                document.querySelectorAll("nav .container .navigation ul li").forEach((li) => {
-                    if (li.classList.contains(this.current)) {
-                        li.classList.add("active");
-                    } else {
-                        li.classList.remove("active");
-                    }
-                })
-            };
+            document.querySelectorAll("section").forEach((section) => {
+                this.sectionTop = section.offsetTop;
+                if (pageYOffset >= this.sectionTop - 60) {
+                    this.current = section.getAttribute("id");
+                } else { }
+            });
+            document.querySelectorAll("nav .container .navigation ul li").forEach((li) => {
+                if (li.classList.contains(this.current)) {
+                    li.classList.add("active");
+                } else {
+                    li.classList.remove("active");
+                }
+            });
         }
     },
 
