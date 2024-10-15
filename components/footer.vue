@@ -11,7 +11,7 @@
 
                 <div class="md:col-span-5 md:mt-0 mt-8">
                     <div class="text-center">
-                        <p class="text-gray-400">Agua Fría Coffe © {{ date }}. Publicado por <a
+                        <p class="text-gray-400">Agua Fría Coffee © {{ date }}. Publicado por <a
                                 href="https://novanet.studio/" target="_blank" class="text-reset">Novanet Studio</a> <i
                                 class="mdi mdi-rocket-launch text-orange-700"></i> </p>
                     </div>

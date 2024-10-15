@@ -14,8 +14,8 @@
                         :strings='["Cultura", "Tradición", "Historia", "Más de 200 años"]' />
                 </h4>
 
-                <p class="text-2xl text-white opacity-75 mb-0 max-w-3xl font-light">Nuestro producción de café ha sido
-                    premiada por su excelente calidad en ferias en España y Bélgica. Conoce nuestra variedades de café,
+                <p class="text-2xl text-white opacity-75 mb-0 max-w-3xl font-light">Nuestra producción de café fue
+                    premiada por su excelente calidad en ferias de España y Bélgica. Conoce nuestra variedades de café,
                     paseos guiados y eventos corporativos pensadas en dar a conocer nuestra cultura cafetalera.</p>
 
                 <div class="relative mt-10">
