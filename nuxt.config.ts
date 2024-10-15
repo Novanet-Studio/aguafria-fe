@@ -2,19 +2,21 @@
 export default defineNuxtConfig({
   ssr: false,
   devtools: { enabled: true },
-
+  routeRules: {
+    '/': { prerender: true },
+  },
   css: [
     '~/assets/scss/tailwind.scss',
     '~/assets/css/materialdesignicons.min.css',
     '~/assets/libs/@iconscout/unicons/css/line.css',
     '~/assets/css/jarallax.min.css'
-],
+  ],
 
   app: {
     head: {
       title: 'Agua Fría Coffee',
       titleTemplate: 'Agua Fría Coffee Landing Page',
-      htmlAttrs: { class: 'light scroll-smooth', dir:'ltr' },
+      htmlAttrs: { class: 'light scroll-smooth', dir: 'ltr' },
       bodyAttrs: {
         class: 'font-saira text-base text-slate-900 dark:text-white dark:bg-slate-900',
       },
@@ -32,7 +34,7 @@ export default defineNuxtConfig({
           // rel: 'stylesheet',
           // href: 'https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css',
         },
-        
+
       ],
       script: [
         {
