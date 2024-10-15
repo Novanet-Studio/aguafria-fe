@@ -1,0 +1,40 @@
+<!-- success.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Form Submission Success</title>
+</head>
+
+<body>
+   <form name="contacto" method="post" action="/gracias" netlify>
+      <input type="hidden" name="form-name" value="contacto">
+      <div class="grid lg:grid-cols-12 lg:gap-6">
+         <div class="lg:col-span-6 mb-5">
+            <input type="text" name="nombre" v-model="name" class="form-input" placeholder="Nombre y apellido :">
+         </div>
+
+         <div class="lg:col-span-6 mb-5">
+            <input type="email" name="email" v-model="email" class="form-input" placeholder="Email :">
+         </div><!--end col-->
+      </div>
+
+      <div class="grid grid-cols-1">
+         <div class="mb-5">
+            <input type="text" name="asunto" class="form-input" placeholder="Asunto :">
+         </div>
+
+         <div class="mb-5">
+            <textarea name="mensaje" v-model="message" class="form-input textarea h-28"
+               placeholder="Mensaje :"></textarea>
+         </div>
+      </div>
+      <button type="submit" id="submit" name="send"
+         class="btn bg-cobalt-primary hover:bg-cobalt-secondary border-cobalt-primary hover:border-cobalt-secondary text-white rounded-md h-11 justify-center flex items-center">Enviar
+         mensaje</button>
+   </form>
+</body>
+
+</html>

@@ -12,7 +12,8 @@
             <div class="grid grid-cols-1 lg:grid-cols-12 md:grid-cols-2 mt-8 items-center gap-6">
                 <div class="lg:col-span-8">
                     <div class="p-6 rounded-md shadow bg-white dark:bg-slate-900">
-                        <form name="contacto" method="post" action="/gracias" netlify>                            
+                        <form name="contacto" method="post" action="./contacto.html" netlify> 
+                            <input type="hidden" name="form-name" value="contacto">                           
                             <div class="grid lg:grid-cols-12 lg:gap-6">
                                 <div class="lg:col-span-6 mb-5">
                                     <input type="text" name="nombre" v-model="name" class="form-input"
