@@ -2,9 +2,6 @@
 export default defineNuxtConfig({
   ssr: false,
   devtools: { enabled: true },
-  routeRules: {
-    '/': { prerender: true },
-  },
   css: [
     '~/assets/scss/tailwind.scss',
     '~/assets/css/materialdesignicons.min.css',
