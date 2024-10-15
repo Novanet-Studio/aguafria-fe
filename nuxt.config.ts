@@ -12,7 +12,7 @@ export default defineNuxtConfig({
   app: {
     head: {
       title: 'Agua Fría Coffee',
-      titleTemplate: 'Agua Fría Coffee',
+      titleTemplate: 'Agua Fría Coffee- Café de Especialidad',
       htmlAttrs: { class: 'light scroll-smooth', dir: 'ltr' },
       bodyAttrs: {
         class: 'font-saira text-base text-slate-900 dark:text-white dark:bg-slate-900',
