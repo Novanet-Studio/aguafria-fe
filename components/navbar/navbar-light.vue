@@ -78,7 +78,7 @@ export default {
             toggle: false,
             scroll: true,
             isBrowser: typeof window !== "undefined",
-            sections: document.querySelectorAll("section"),
+            sections: () => { if (!isBrowser) document.querySelectorAll("section") },
             navLi: () => { if (!isBrowser) document.querySelectorAll("nav .container .navigation ul li") },
             current: "",
             sectionTop: null,
