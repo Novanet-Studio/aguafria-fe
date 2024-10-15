@@ -112,13 +112,13 @@ export default {
         },
 
         onscroll() {
-            document.querySelectorAll("section").forEach((section) => {
+             if (!isBrowser) document.querySelectorAll("section").forEach((section) => {
                 this.sectionTop = section.offsetTop;
                 if (pageYOffset >= this.sectionTop - 60) {
                     this.current = section.getAttribute("id");
                 } else { }
             });
-            document.querySelectorAll("nav .container .navigation ul li").forEach((li) => {
+            if (!isBrowser) document.querySelectorAll("nav .container .navigation ul li").forEach((li) => {
                 if (li.classList.contains(this.current)) {
                     li.classList.add("active");
                 } else {
