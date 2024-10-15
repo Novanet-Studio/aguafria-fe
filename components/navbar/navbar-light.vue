@@ -112,19 +112,24 @@ export default {
         },
 
         onscroll() {
-             if (!isBrowser) document.querySelectorAll("section").forEach((section) => {
-                this.sectionTop = section.offsetTop;
-                if (pageYOffset >= this.sectionTop - 60) {
-                    this.current = section.getAttribute("id");
-                } else { }
-            });
-            if (!isBrowser) document.querySelectorAll("nav .container .navigation ul li").forEach((li) => {
-                if (li.classList.contains(this.current)) {
-                    li.classList.add("active");
-                } else {
-                    li.classList.remove("active");
-                }
-            });
+            if (!isBrowser) {
+                document.querySelectorAll("section").forEach((section) => {
+                    this.sectionTop = section.offsetTop;
+                    if (pageYOffset >= this.sectionTop - 60) {
+                        this.current = section.getAttribute("id");
+                    } else { }
+                })
+            }
+
+            if (!isBrowser) {
+                document.querySelectorAll("nav .container .navigation ul li").forEach((li) => {
+                    if (li.classList.contains(this.current)) {
+                        li.classList.add("active");
+                    } else {
+                        li.classList.remove("active");
+                    }
+                })
+            };
         }
     },
 
