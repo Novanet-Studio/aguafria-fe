@@ -68,13 +68,15 @@
         </div><!--end container-->
     </section><!--end section-->
     <!-- End -->
-    <div :class="isActive ? 'fixed' : 'hidden'" class="bg-black/[0.9] top-0 left-0 bottom-0 w-[100%] h-[100%] z-999">
-        <div class="h-[100%] flex items-center justify-center">
-            <div class="relative inline-block">
+    <div :class="isActive ? 'fixed' : 'hidden'" class="bg-black/[0.9] top-0 left-0 bottom-0 right-0 w-[100%] h-[100%] z-999">
+        <div class="h-[100%] flex items-center justify-center p-4">
+            <div class="relative w-full max-w-[960px] aspect-video">
                 <iframe
                     src="https://res.cloudinary.com/novanet-studio/video/upload/v1728914287/aguafriacoffee/public/aguafriacoffee-presentacion-lbr_kqrmcv.mp4"
-                    width="960" height="540" frameborder="0"></iframe>
-                <a class="mdi mdi-close text-white absolute top-1 right-1 text-xl cursor-pointer" @click="toggle"></a>
+                    frameborder="0"
+                    class="w-full h-full rounded-lg shadow-2xl"
+                    allowfullscreen></iframe>
+                <a class="mdi mdi-close text-white absolute -top-10 right-0 text-3xl cursor-pointer hover:text-red-primary transition-colors duration-300" @click="toggle"></a>
             </div>
         </div>
     </div>
