@@ -5,7 +5,7 @@
             <div class="grid grid-cols-1 lg:grid-cols-12 md:grid-cols-2 gap-10 items-center">
                 <div class="lg:col-span-5">
                     <div class="relative">
-                        <img src="assets/images/about.jpg" class="rounded-lg shadow-lg relative" alt="">
+                        <img src="~/assets/images/about.jpg" class="rounded-lg shadow-lg relative" alt="">
                         <div class="absolute bottom-2/4 translate-y-2/4 start-0 end-0 text-center">
                             <a @click="toggle" data-type="youtube" data-id="S_CGed6E610"
                                 class="cursor-pointer lightbox cursor-pointer size-20 rounded-full shadow-lg shadow-slate-100 dark:shadow-slate-800 inline-flex items-center justify-center bg-white dark:bg-slate-900 text-red-primary">
@@ -61,7 +61,7 @@
                 </div><!--end col-->
                 <div class="lg:col-span-5">
                     <div class="relative">
-                        <img src="assets/images/about-2.jpg" class="rounded-lg shadow-lg relative" alt="">
+                        <img src="~/assets/images/about-2.jpg" class="rounded-lg shadow-lg relative" alt="">
                     </div>
                 </div><!--end col-->
             </div><!--end grid-->
@@ -71,12 +71,17 @@
     <div :class="isActive ? 'fixed' : 'hidden'" class="bg-black/[0.9] top-0 left-0 bottom-0 right-0 w-[100%] h-[100%] z-999">
         <div class="h-[100%] flex items-center justify-center p-4">
             <div class="relative w-full max-w-[960px] aspect-video">
-                <iframe
+                <video
                     src="https://res.cloudinary.com/novanet-studio/video/upload/v1728914287/aguafriacoffee/public/aguafriacoffee-presentacion-lbr_kqrmcv.mp4"
-                    frameborder="0"
-                    class="w-full h-full rounded-lg shadow-2xl"
-                    allowfullscreen></iframe>
-                <a class="mdi mdi-close text-white absolute -top-10 right-0 text-3xl cursor-pointer hover:text-red-primary transition-colors duration-300" @click="toggle"></a>
+                    class="w-full h-full rounded-lg shadow-2xl bg-black"
+                    controls
+                    playsinline></video>
+                <button 
+                    class="absolute top-3 right-3 size-10 flex items-center justify-center rounded-full bg-black/60 text-white hover:bg-red-primary transition-all duration-300 z-10 shadow-lg"
+                    @click="toggle"
+                    aria-label="Cerrar">
+                    <i class="mdi mdi-close text-2xl"></i>
+                </button>
             </div>
         </div>
     </div>

@@ -2,8 +2,8 @@
     <nav class="navbar" id="navbar" @scroll="handleScroll">
         <div class="container flex flex-wrap items-center justify-end">
             <NuxtLink class="navbar-brand" to="/">
-                <img src="assets/images/logo-dark.png" class="inline-block dark:hidden" alt="">
-                <img src="assets/images/logo-light.png" class="hidden dark:inline-block" alt="">
+                <img src="~/assets/images/logo-dark.png" class="inline-block dark:hidden" alt="">
+                <img src="~/assets/images/logo-light.png" class="hidden dark:inline-block" alt="">
             </NuxtLink>
 
             <div class="nav-icons flex items-center lg_992:order-2 ms-auto">
@@ -30,7 +30,7 @@
             </div>
 
             <!-- Navbar Manu -->
-            <div class="navigation lg_992:order-1 lg_992:flex" id="menu-collapse" :class="{ hidden: !toggle }">
+            <div class="navigation lg_992:order-1 lg_992:flex" id="menu-collapse" :class="{ 'hidden lg_992:flex': !toggle }">
                 <ul class="navbar-nav nav-light" id="navbar-navlist">
                     <li class="nav-item active inicio">
                         <a class="nav-link" href="#inicio">Inicio</a>

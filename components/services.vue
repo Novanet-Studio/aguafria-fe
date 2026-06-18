@@ -19,7 +19,7 @@
                         <div v-if="item.id === '1'" class="grid sm:grid-cols-2">
                             <div>
                                 <div class="duration date-label-left ltr:float-right rtl:float-left md:me-7 relative">
-                                    <img :src="item.image" class="size-64 rounded-lg shadow-lg relative" alt="">
+                                    <img :src="item.image" class="w-full max-w-64 aspect-square object-cover rounded-lg shadow-lg relative" alt="">
                                 </div>
                             </div><!--end col-->
                             <div class="mt-4 md:mt-0">
@@ -43,7 +43,7 @@
                             </div><!--end col-->
                             <div class="md:order-2 order-1">
                                 <div class="duration duration-right md:ms-7 relative">
-                                    <img :src="item.image" class="size-64 rounded-lg shadow-lg relative" alt="">
+                                    <img :src="item.image" class="w-full max-w-64 aspect-square object-cover rounded-lg shadow-lg relative" alt="">
                                 </div>
                             </div><!--end col-->
                         </div><!--end grid-->

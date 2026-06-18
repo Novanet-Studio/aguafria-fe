@@ -19,7 +19,7 @@
                 <div v-for="data in datas" :key="data" :class="data.class">
                     <div
                         class="size-20 bg-orange-600/5 text-orange-600 rounded-xl text-3xl flex align-middle justify-center items-center shadow-sm">
-                        <img :src="data.image" class="size-64" alt="">
+                        <img :src="data.image" class="size-12 object-contain" alt="">
                     </div>
 
                     <div class="content mt-7">

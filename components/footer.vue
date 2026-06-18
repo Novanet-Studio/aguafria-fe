@@ -5,7 +5,7 @@
             <div class="grid md:grid-cols-12 items-center">
                 <div class="md:col-span-3">
                     <a href="#" class="logo-footer">
-                        <img src="assets/images/logo-dark.png" class="md:ms-0 mx-auto" alt="">
+                        <img src="~/assets/images/logo-dark.png" class="md:ms-0 mx-auto" alt="">
                     </a>
                 </div>
 
