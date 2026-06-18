@@ -33,19 +33,19 @@
             <div class="navigation lg_992:order-1 lg_992:flex" id="menu-collapse" :class="{ 'hidden lg_992:flex': !toggle }">
                 <ul class="navbar-nav nav-light" id="navbar-navlist">
                     <li class="nav-item active inicio">
-                        <a class="nav-link" href="#inicio">Inicio</a>
+                        <a class="nav-link" href="#inicio" @click="toggle = false">Inicio</a>
                     </li>
                     <li class="nav-item historia">
-                        <a class="nav-link" href="#historia">Historia</a>
+                        <a class="nav-link" href="#historia" @click="toggle = false">Historia</a>
                     </li>
                     <li class="nav-item productos">
-                        <a class="nav-link" href="#productos">Productos</a>
+                        <a class="nav-link" href="#productos" @click="toggle = false">Productos</a>
                     </li>
                     <li class="nav-item servicios">
-                        <a class="nav-link" href="#servcios">Servicios</a>
+                        <a class="nav-link" href="#servicios" @click="toggle = false">Servicios</a>
                     </li>
                     <li class="nav-item contacto">
-                        <a class="nav-link" href="#contacto">Contacto</a>
+                        <a class="nav-link" href="#contacto" @click="toggle = false">Contacto</a>
                     </li>
 
                 </ul>

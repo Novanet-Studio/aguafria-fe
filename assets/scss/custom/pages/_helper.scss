@@ -132,27 +132,7 @@
 }
 
 
-//video iframe
-@media (max-width: 640px) {
-    iframe, video {
-        width: 500px;
-        height: 300px;
-    }
-}
 
-@media (max-width: 425px) {
-    iframe, video {
-        width: 360px;
-        height: 260px;
-    }
-}
-
-@media (max-width: 375px) {
-    iframe, video {
-        width: 100%;
-        height: auto;
-    }
-}
 
 ul li{
     -webkit-margin-start: 0.25rem;
