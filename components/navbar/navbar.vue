@@ -64,14 +64,11 @@ export default {
         return {
             toggle: false,
             scroll: true,
-            sections: document.querySelectorAll("section"),
-            navLi: document.querySelectorAll("nav .container .navigation ul li"),
             current: "",
             sectionTop: null,
-
         }
     },
-    created() {
+    mounted() {
         window.addEventListener('scroll', this.handleScroll);
         window.addEventListener('scroll', this.onscroll);
     },
