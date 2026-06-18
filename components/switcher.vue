@@ -31,22 +31,25 @@ import feather from 'feather-icons'
 export default {
     data(){
         return{
-            htmlTag : document.getElementsByTagName("html")[0],
+            htmlTag : null,
             showTopButton: false
         }
     },
    
     mounted() {
         feather.replace();
-        
-
+        if (typeof document !== 'undefined') {
+            this.htmlTag = document.getElementsByTagName("html")[0];
+        }
+        if (typeof window !== 'undefined') {
+            window.addEventListener('scroll', this.handleScroll);
+        }
     },
 
-    created () {
-        window.addEventListener('scroll', this.handleScroll);
-    },
     unmounted () {
-        window.removeEventListener('scroll', this.handleScroll);
+        if (typeof window !== 'undefined') {
+            window.removeEventListener('scroll', this.handleScroll);
+        }
     },
     
  methods: {
@@ -61,25 +64,31 @@ export default {
         }
     },
     changeThem(event) {
-        if(event.target.innerText === "LTR"){
-            this.htmlTag.dir = "ltr"
-        }
-        else{
-            this.htmlTag.dir = "rtl"
+        if (this.htmlTag) {
+            if(event.target.innerText === "LTR"){
+                this.htmlTag.dir = "ltr"
+            }
+            else{
+                this.htmlTag.dir = "rtl"
+            }
         }
     
     },
 
     changeMode(event){
-        if (this.htmlTag.className.includes("dark")) {
-            this.htmlTag.className = 'light'
-        } else {
-            this.htmlTag.className = 'dark'
+        if (this.htmlTag) {
+            if (this.htmlTag.className.includes("dark")) {
+                this.htmlTag.className = 'light'
+            } else {
+                this.htmlTag.className = 'dark'
+            }
         }
     },
 
     scrollToTop() {
-        window.scrollTo(0,0);
+        if (typeof window !== 'undefined') {
+            window.scrollTo(0,0);
+        }
     }
    },
     
