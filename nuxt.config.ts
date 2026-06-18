@@ -2,6 +2,11 @@
 export default defineNuxtConfig({
   ssr: false,
   devtools: { enabled: true },
+  runtimeConfig: {
+    public: {
+      metricoolHash: '' // Overridden by NUXT_PUBLIC_METRICOOL_HASH env var
+    }
+  },
   css: [
     '~/assets/scss/tailwind.scss',
     '~/assets/css/materialdesignicons.min.css',
